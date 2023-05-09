@@ -5,3 +5,6 @@ https://github.com/dev-kucha/JAVA-CBS-05-2023/tree/lesson1/task1
 
 ## lesson1 / task2
 https://github.com/dev-kucha/JAVA-CBS-05-2023/tree/lesson1/task2
+
+## lesson1 / task4
+https://github.com/dev-kucha/JAVA-CBS-05-2023/tree/lesson1/task4
