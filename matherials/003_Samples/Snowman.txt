@@ -1,0 +1,9 @@
+package itvdn.java.basis.lesson3;
+
+public class Snowman {
+    private final String snowman = "\u26C4";
+
+    public String getSnowman() {
+        return snowman;
+    }
+}

@@ -1,0 +1,9 @@
+package itvdn.java.basis.lesson3;
+
+public class GasStation {
+    private final String gasStation = "\u26FD";
+
+    public String getGasStation() {
+        return gasStation;
+    }
+}

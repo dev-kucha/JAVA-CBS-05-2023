@@ -1,0 +1,9 @@
+package itvdn.java.basis.lesson3;
+
+public class VerticalRoad {
+    private final String verticalRoad = "|\u2758|";
+
+    public String getVerticalRoad() {
+        return verticalRoad;
+    }
+}

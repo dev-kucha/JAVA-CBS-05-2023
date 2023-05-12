@@ -1,0 +1,9 @@
+package itvdn.java.basis.lesson3;
+
+public class House {
+    private final String house = "\u26EA";
+
+    public String getHouse() {
+        return house;
+    }
+}

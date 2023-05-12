@@ -1,0 +1,72 @@
+package itvdn.java.basis.lesson3;
+
+import java.util.Scanner;
+
+public class CityBuilder {
+    private static final String chooseObject = "Choose an Object: ";
+    private static Utils utils = new Utils();
+    private static int counter = 0;
+    private static String[] city = new String[100];
+
+    public static void main(String[] args) {
+        String strCommand;
+        Scanner reader = new Scanner(System.in);
+        System.out.print(chooseObject);
+        while (true) {
+            strCommand = reader.nextLine();
+            switch (strCommand) {
+                case "h":
+                    city[counter] = new House().getHouse();
+                    counter++;
+                    utils.build(city);
+                    break;
+
+                case "s":
+                    city[counter] = new Snowman().getSnowman();
+                    counter++;
+                    utils.build(city);
+                    break;
+
+                case "f":
+                    city[counter] = new Fountain().getFountain();
+                    counter++;
+                    utils.build(city);
+                    break;
+
+                case "g":
+                    city[counter] = new GasStation().getGasStation();
+                    counter++;
+                    utils.build(city);
+                    break;
+
+                case "rv":
+                    city[counter] = new VerticalRoad().getVerticalRoad();
+                    counter++;
+                    utils.build(city);
+                    break;
+
+                case "rh":
+                    city[counter] = new HorizontalRoad().getHorizontalRoad();
+                    counter++;
+                    utils.build(city);
+                    break;
+
+                case "nl":
+                    city[counter] = "<br>\n";
+                    counter++;
+                    utils.build(city);
+                    break;
+
+                case "save":
+                    utils.writeToFile(city);
+                    System.exit(0);
+
+                default:
+                    System.out.println("Wrong input. Try again.");
+                    System.out.println();
+                    System.out.print(chooseObject);
+                    break;
+            }
+        }
+    }
+}
